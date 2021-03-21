@@ -65,13 +65,14 @@ function handleCardSelected() {
       }, 500);
     }
   }
-  if (document.querySelectorAll(".freeze").length == numberOfCards) {
+  if (document.querySelectorAll(".freeze").length == 2) {
     finishGame();
   }
 }
 
 function finishGame() {
-    winMsg.classList.add("win");
+  winMsg.classList.remove("fade");
+  winMsg.classList.add("win");
 }
 
 startGame();
