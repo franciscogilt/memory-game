@@ -17,6 +17,7 @@ const numberOfColors = colors.length;
 var clickedCards = [];
 
 function startGame() {
+  winMsg.classList.add("fade");
   winMsg.classList.remove("win");
 
   cards.forEach(card => {
@@ -70,6 +71,7 @@ function handleCardSelected() {
 
 function finishGame() {
   winMsg.classList.add("win");
+  winMsg.classList.remove("fade");
 }
 
 startGame();
