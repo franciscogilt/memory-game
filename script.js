@@ -19,6 +19,7 @@ var clickedCards = [];
 function startGame() {
   if (winMsg.classList.contains("win")) {
     winMsg.classList.remove("win");
+    winMsg.classList.add("fade");
   }
 
   cards.forEach(card => {
