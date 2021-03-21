@@ -71,8 +71,8 @@ function handleCardSelected() {
 }
 
 function finishGame() {
-    winMsg.classList.add("win");
     winMsg.classList.remove("fade");
+    winMsg.classList.add("win");
 }
 
 startGame();
