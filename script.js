@@ -11,18 +11,19 @@ const colors = [
 
 document.querySelector(".btn").addEventListener("click", startGame);
 const cards = document.querySelectorAll(".card");
-const winMsg = document.querySelector(".win");
+const winMsg = document.querySelector("#win");
 const numberOfCards = cards.length;
 const numberOfColors = colors.length;
 var clickedCards = [];
 
 function startGame() {
-  if (winMsg.classList.contains("fade")) {
-    winMsg.classList.remove("fade");
+  if (winMsg.classList.contains("win")) {
+    winMsg.classList.remove("win");
   }
 
   cards.forEach(card => {
-    card.classList.add("hide").remove("freeze");
+    card.classList.add("hide");
+    card.classList.remove("freeze");
   });
 
   for (let i = 0; i < numberOfCards; i++) {
@@ -70,7 +71,7 @@ function handleCardSelected() {
 }
 
 function finishGame() {
-  winMsg.classList.add("fade");
+  winMsg.classList.add("win");
 }
 
 startGame();

@@ -19,12 +19,12 @@ body {
     font-size: 32px;
     font-weight: bold;
     color: #ff0000;
-    opacity: 0;
+    opacity: 1;
     transition: .7s;
 }
 
-.win.fade {
-    opacity: 1;
+.fade {
+    opacity: 0;
 }
 
 .container {
