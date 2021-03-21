@@ -72,7 +72,7 @@ function handleCardSelected() {
 
 function finishGame() {
     winMsg.classList.add("win");
-    winMsg.classList.remove("win");
+    winMsg.classList.remove("fade");
 }
 
 startGame();
