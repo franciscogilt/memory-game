@@ -18,7 +18,6 @@ var clickedCards = [];
 
 function startGame() {
   winMsg.classList.remove("win");
-  winMsg.classList.add("fade");
 
   cards.forEach(card => {
     card.classList.add("hide");
@@ -70,7 +69,6 @@ function handleCardSelected() {
 }
 
 function finishGame() {
-  winMsg.classList.remove("fade");
   winMsg.classList.add("win");
 }
 
