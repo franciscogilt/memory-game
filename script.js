@@ -65,7 +65,7 @@ function handleCardSelected() {
       }, 500);
     }
   }
-  if (document.querySelectorAll(".freeze").length == 2) {
+  if (document.querySelectorAll(".freeze").length == numberOfCards) {
     finishGame();
   }
 }
